@@ -1,0 +1,32 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.ioException;
+import java.io.FileNotFoundException;
+public class StoryReader {
+	public static void main(String[] args) throws IOException {
+		 FileReader fr=new FileReader("example.txt");
+		 BufferedReader br=new BufferedReader(fr);
+		 String example="";
+		while((example=br.readLine() ) != null)
+				{		
+		 System.out.println(example);
+		}
+		br.close();fr.close();
+	}
+}
+//example.txt name create file
+Subham yadav 
+Subham yadav from Baliya
+Subham yadav Starting Java Full stack java developer
+Subham yadav present Time in seen movies 
+Subham yadav present time seen Youtube reels
+
+
+
+Output
+Subham yadav Baliya
+Subham yadav from Baliya
+Subham yadav Starting Java Full stack java developer
+Subham yadav present Time in seen movies 
+Subham yadav present time seen Youtube reels
